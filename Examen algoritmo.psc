@@ -1,6 +1,6 @@
-Algoritmo sin_titulo
+Algoritmo Calculadora
 	Definir Numx, Numy, Resultado Como Real
-	Definir Operación, Continuar Como Caracter
+	Definir OperaciÃ³n, Continuar Como Caracter
 	Definir i Como Entero
 	
 	repetir 
@@ -52,33 +52,33 @@ Algoritmo sin_titulo
 				
 			Caso "5":
 				Escribir "Ingrese el radicando:"
-                Leer num1
-                Escribir "Ingrese el índice:"
-                Leer num2
-                Si num1 >= 0 Entonces
-                    resultado <- num1 ^ (1/num2)
-                    Escribir "La RAÍZ es: ", resultado
+                Leer Numx
+                Escribir "Ingrese el Ã­ndice:"
+                Leer Numy
+                Si Numx >= 0 Entonces
+                    resultado <- Numx ^ (1/Numy)
+                    Escribir "La RAÃZ es: ", resultado
                 Sino
-                    Escribir "La raíz de un número negativo no corresponde a los reales."
+                    Escribir "La raÃ­z de un nÃºmero negativo no corresponde a los reales."
                 FinSi
 				
 			Caso "6":
 				Escribir "Ingrese la base:"
-                Leer num1
+                Leer Numx
                 Escribir "Ingrese el exponente:"
-                Leer num2
+                Leer Numy
                 resultado <- 1
-                Para i <- 1 Hasta num2 Hacer
-                    resultado <- resultado * num1
+                Para i <- 1 Hasta Numy Hacer
+                    resultado <- resultado * Numx
                 FinPara
                 Escribir "La POTENCIA es: ", resultado
                 
             otro:
-                Escribir "Operación no válida."
+                Escribir "OperaciÃ³n no vÃ¡lida."
 				
 		FinSegun
 		
-		Escribir "¿Desea realizar otra operacion? (s/n) "
+		Escribir "Â¿Desea realizar otra operacion? (s/n) "
 		Leer Continuar 	
 	Hasta Que Continuar = "n" o Continuar = "N"
 	
